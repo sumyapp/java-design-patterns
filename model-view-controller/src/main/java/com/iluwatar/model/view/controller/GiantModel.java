@@ -66,9 +66,10 @@ public class GiantModel {
         }
       }
     }
-    // miss spell: corporation
-    if (a == "corporacion") {
-      b = a;
+    // miss spell
+    String corporacion_name = "corporacion";
+    if (corporacion_name == "corporacion") {
+      b = a; // It's stylisch
     }
   }
 
