@@ -23,7 +23,7 @@
 package com.iluwatar.model.view.controller;
 
 /**
- * 
+ *
  * GiantModel contains the giant data
  *
  */
@@ -37,6 +37,53 @@ public class GiantModel {
     this.health = health;
     this.fatigue = fatigue;
     this.nourishment = nourishment;
+    // LocalVariableName
+    int health_backup = 0;
+    // MultipleVariableDeclarations
+    public String a, b;
+    
+    // WhitespaceAround
+    if(this.health == null) {
+      // Use magic number
+      this.health = 8080;
+      // Too long line
+      this.fatigue = 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1;
+      // MissingSwitchDefault
+      switch (status) {
+        case true:
+          break;
+        case false:
+          break;
+      }
+        // wrong indent
+        boolean status = (this.health == this.fatigue);
+
+    }
+    
+    // TodoComment
+    // TODO: Implementation
+    if (true) {
+      if (true) {
+        if (true) {
+          health_backup++;
+        }
+      }
+    }
+    
+    // StringLiteralEquality
+    if (a == "something") {
+      b = a;
+    }
+
+  }
+  
+  // JavadocMethod
+  public boolean isHealthNull() {
+    // NeedBraces & SimplifyBooleanReturn
+    if (this.health != null)
+      return false;
+    else
+      return true;
   }
 
   public Health getHealth() {
