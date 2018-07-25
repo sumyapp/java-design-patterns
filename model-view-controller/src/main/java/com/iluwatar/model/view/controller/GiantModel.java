@@ -32,6 +32,8 @@ public class GiantModel {
   private Health health;
   private Fatigue fatigue;
   private Nourishment nourishment;
+  // MultipleVariableDeclarations
+  public String a, b;
 
   GiantModel(Health health, Fatigue fatigue, Nourishment nourishment) {
     this.health = health;
@@ -39,9 +41,6 @@ public class GiantModel {
     this.nourishment = nourishment;
     // LocalVariableName
     int health_backup = 0;
-    // MultipleVariableDeclarations
-    public String a, b;
-    
     // WhitespaceAround
     if(this.health == null) {
       // Use magic number
@@ -57,9 +56,7 @@ public class GiantModel {
       }
         // wrong indent
         boolean status = (this.health == this.fatigue);
-
     }
-    
     // TodoComment
     // TODO: Implementation
     if (true) {
@@ -69,14 +66,12 @@ public class GiantModel {
         }
       }
     }
-    
-    // StringLiteralEquality
-    if (a == "something") {
+    // miss spell: corporation
+    if (a == "corporacion") {
       b = a;
     }
-
   }
-  
+
   // JavadocMethod
   public boolean isHealthNull() {
     // NeedBraces & SimplifyBooleanReturn
