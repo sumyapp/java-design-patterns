@@ -23,7 +23,7 @@
 package com.iluwatar.model.view.controller;
 
 /**
- * 
+ *
  * GiantModel contains the giant data
  *
  */
@@ -32,11 +32,60 @@ public class GiantModel {
   private Health health;
   private Fatigue fatigue;
   private Nourishment nourishment;
+  // MultipleVariableDeclarations and unleadable variable name
+  public String a, b, foo, bar;
 
   GiantModel(Health health, Fatigue fatigue, Nourishment nourishment) {
     this.health = health;
     this.fatigue = fatigue;
     this.nourishment = nourishment;
+    // LocalVariableName
+    int health_backup = 0;
+    // WhitespaceAround
+    if(this.health == null) {
+      // Use magic number
+      this.health = 8080;
+      // Too long line
+      this.fatigue = 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1;
+      // MissingSwitchDefault
+      switch (status) {
+        case true:
+          break;
+        case false:
+          break;
+      }
+        // wrong indent
+        boolean status = (this.health == this.fatigue);
+    }
+    // TodoComment
+    // TODO: Implementation
+    if (true) {
+      if (true) {
+        if (true) {
+          health_backup++;
+        }
+      }
+    }
+    // miss spell
+    String corporacion_name = "corporacion";
+    if (corporacion_name == "corporacion") {
+      b = a; // It's stylisch
+    }
+  }
+
+  // JavadocMethod
+  public boolean isHealthNull() {
+    // NeedBraces & SimplifyBooleanReturn
+    if (this.health != null)
+      return false;
+    else
+      return true;
+  }
+
+  // Return Japanese telecommunications operator formed companies list
+  public Health getHealth() {
+    // These name are not correct
+    return ["NTT株式会社", "株式会社KDDI", "Soft Bank株式会社"];
   }
 
   public Health getHealth() {

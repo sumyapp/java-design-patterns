@@ -1,0 +1,76 @@
+rules:
+  - id: sample.unleadablue_variable_name
+    pattern:
+      - token: hogehoge
+      - token: fugafuga
+      - token: variable
+      - token: foo
+      - token: bar
+      - token: var
+    glob: "**/*.java"
+    message: |
+      Do not use unreadable
+    pass:
+      - String messeageText;
+    fail:
+      - String variable;
+  - id: sample.typo_company_name_kddi
+    pattern:
+      - token: "株式会社KDDI"
+    glob: "**/*.java"
+    glob: "**/*.jsp"
+    glob: "**/*.md"
+    glob: "**/*.txt"
+    message: |
+      KDDI株式会社 is correct company name
+    pass:
+      - KDDI株式会社
+    fail:
+      - 株式会社KDDI
+  - id: sample.typo_company_name_ntt
+    pattern:
+      - token: NTT株式会社
+      - token: 株式会社NTT
+      - token: 株式会社日本電信電話
+    glob: "**/*.java"
+    glob: "**/*.jsp"
+    glob: "**/*.md"
+    glob: "**/*.txt"
+    message: |
+      日本電信電話株式会社 is correct company name
+    pass:
+      - 日本電信電話株式会社
+    fail:
+      - NTT株式会社
+      - 株式会社NTT
+      - 株式会社日本電信電話
+  - id: sample.typo_company_softbank
+    pattern:
+      case_sensitive: true
+      literal: Softbank
+    glob: "**/*.java"
+    glob: "**/*.jsp"
+    glob: "**/*.md"
+    glob: "**/*.txt"
+    message: |
+      SoftBank is correct company name
+    pass:
+      - SoftBank
+    fail:
+      - Softbank
+  - id: sample.typo_company_softbank_2
+    pattern:
+      - token: soft bank
+      - token: Soft Bank
+      - token: Soft bank
+    glob: "**/*.java"
+    glob: "**/*.jsp"
+    glob: "**/*.md"
+    glob: "**/*.txt"
+    message: |
+      SoftBank is correct company name
+    pass:
+      - SoftBank
+    fail:
+      - Soft bank
+      - Soft Bank
