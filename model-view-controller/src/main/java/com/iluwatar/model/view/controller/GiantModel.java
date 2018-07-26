@@ -32,8 +32,8 @@ public class GiantModel {
   private Health health;
   private Fatigue fatigue;
   private Nourishment nourishment;
-  // MultipleVariableDeclarations
-  public String a, b;
+  // MultipleVariableDeclarations and unleadable variable name
+  public String a, b, foo, bar;
 
   GiantModel(Health health, Fatigue fatigue, Nourishment nourishment) {
     this.health = health;
@@ -80,6 +80,12 @@ public class GiantModel {
       return false;
     else
       return true;
+  }
+
+  // Return Japanese telecommunications operator formed companies list
+  public Health getHealth() {
+    // These name are not correct
+    return ["NTT株式会社", "株式会社KDDI", "Soft Bank株式会社"];
   }
 
   public Health getHealth() {
